@@ -1,0 +1,312 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+html{
+	zoom: 100%;
+
+}
+.navbar-fixed{
+	height: 90px !important;
+	box-shadow: none;
+	position: fixed !important;
+	top: -1px;
+	left: 0px;
+
+	/*width: 1vw;*/
+}
+#logo-container{
+	/*padding-top: 1.25vh !important;*/
+}
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+.background-primary{
+	background-color: #f95252;
+}
+
+.color-primary{
+	color: #f95252;
+}
+
+.background-secondary{
+	background-color: #000;
+}
+
+.checkit-logo{
+	width: 60px;
+	height: 60px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+    pointer-events: none;
+ 
+}
+
+.checkit-logo-bw{
+	width: 75%;
+	margin-top: 2px;
+	margin-bottom: 2px;
+    
+}
+
+.navbar-logo-name{
+	font-size:24px;
+	color:#f95252; 
+	position: relative;
+	top: -20px;
+	/*left: 50px;*/
+}
+
+.navbar-fixed .right li a, .button-collapse{
+	/*height: 12vh !important;*/
+	font-size: 18px;
+	/*padding-top: 2vh;*/
+    font-weight: 300;
+	color: #212121;
+}
+
+#sidenav-overlay {
+	z-index:996 !important;
+}
+
+.ace-phone{
+	background-image: url("../images/home_brand.png");
+	background-repeat: no-repeat;
+	background-position: top;
+	height: 75vh !important;
+	background-size:contain;
+	margin: 0 auto;
+}
+
+#section-ace{
+
+	padding-top: 0px;
+
+	padding-top: 50px;
+
+	padding-bottom: 60px;
+	margin-top: 12vh;
+}
+
+.ace-phone-side-text{
+	/*padding-left:  !important;*/
+	padding-top: 13vh !important;
+	font-weight: 300;
+	font-size: 18px;
+	color: #212121;
+}
+
+.playstore-btn{
+	background-image: url('../images/android-logo.png');
+	width: 25px;
+	height: 25px;
+	margin-left: 10px;
+    margin-right: 5px;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+.footnote{
+	color: #626262	;
+	font-size: 14px;
+}
+
+.footer-grey{
+	background-color:#F5F5F5  !important;
+	color: #535353;
+}
+
+.footer-grey ul li a{
+	color: #535353;
+}
+
+#ace-demo{
+	background-color: #fafafa;
+}
+
+#ace-demo-holder{
+	background-image: url("../images/home_brand.png");
+	height: 500px;
+	background-repeat: no-repeat;
+	background-position: center;
+	/*width: 100%;*/
+	background-size:auto 100%;
+
+}
+
+
+#ace-demo-button-holder{
+	width: inherit;
+	/*margin-left: 50%;*/
+}
+.collection-item{
+	min-height: 50px;
+	vertical-align: middle;
+	margin-top: auto;
+	margin-bottom: auto;
+
+}
+
+.collection .collection-item.active{
+	background-color: #f95252 !important;
+}
+
+.collection .collection-item h5{
+	font-weight: 100;
+}
+
+@-webkit-keyframes blackWhite {  
+  0% { background-color: #fafafa; }
+  50% { background-color: #fafafa; }
+  51% { background-color: black; }
+  100% { background-color: black; }
+}
+
+#ace-demo-holder{
+    background-color: black;
+    -webkit-animation-name: blackWhite;  
+    -webkit-animation-iteration-count: infinite;  
+    -webkit-animation-duration: 5s; 
+} 
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #525252;
+}
+ 
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 200px;
+  /*height: 300px;*/
+  /*padding: 15px;*/
+  background: #f95252;
+}
+ 
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+ 
+.timeline ul li:nth-child(odd) div::before {
+  left: -16px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #f95252 transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -239px;
+}
+ 
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #f95252;
+}
+
+.timeline ul li::after {
+  /*background: #fff;*/
+  transition: background .5s ease-in-out;
+}
+ 
+.timeline ul li.in-view::after {
+  background: #f95252;
+}
+ 
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px; /*250+45-6*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+   
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+   
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+   
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #f95252 transparent transparent;
+  }
+}
+
+ /* label color */
+   .input-field label {
+     color: #525252 !important ;
+   }
+   /* label focus color */
+   .input-field input[type=email]:focus + label {
+     color: #f95252 !important;
+   }
+   /* label underline focus color */
+   .input-field input[type=email]:focus {
+     border-bottom: 1px solid #f95252 !important;
+     box-shadow: 0 1px 0 0 #f95252 !important;
+   }
+   /* valid color */
+   .input-field input[type=email].valid {
+     border-bottom: 1px solid #f95252 !important;
+     box-shadow: 0 1px 0 0 #f95252 !important;
+   }
+   /* invalid color */
+   .input-field input[type=email].invalid {
+     border-bottom: 1px solid red !important;
+     box-shadow: 0 1px 0 0 red !important;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #f95252 !important;
+   }
+
+#feat_1{
+    background-image: url("../images/screens/Create.png");
+    background-size:auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
